@@ -8,17 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+<!--
     <META http-equiv="refresh" content="1.7;URL=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-
+-->
     <title>Utopia Algorithm</title>
 
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -34,6 +33,11 @@
 </head>
 
 <body>
+
+    <div id="troll" title="You Got Owned!">
+        <p>YOU GOT OWNED</p>
+        <iframe width="600" height="400" src="http://www.youtube.com/embed/dQw4w9WgXcQ?loop=1&disablekb=1&controls=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -185,14 +189,24 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        /*
+        setTimeout(function() {
+            $("#troll").css("display", "block");
+        }, 2000);
+        */
+        $("a").attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    });
+    </script>
 
 </body>
 
